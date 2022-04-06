@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.15.1/dist/phaser-arcade-physics.min.js"></script>
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="somewhat-stylish.css">
+</head>
+<body>
+    <div id="game" class="main" ></div>
+    <div id="ui-container" class="ui">
+        <div id="ui-utility-toggle">
+            <button onClick="switchColorMode()">
+                <img class="utility-btn" src="./assets/icons/ico-color.png"/>
+            </button>
+            <button onClick="reset()">
+                <img class="utility-btn" src="./assets/icons/ico-reset.png"/>
+            </button>
+            <button onClick="download()">
+                <img class="utility-btn" src="./assets/icons/ico-download.png"/>
+            </button>
+        </div>
+        <div id="ui-info-toggle">
+            <button id="info-btn">
+                <img class="info-btn" src="./assets/icons/ico-info.png"/>
+            </button>
+        </div>
+        <div id="ui-clothing-cat-select">
+        </div>
+        <div id="ui-clothing-select">
+        </div>
+    </div>
+    <div id="info-popup" class="closed">
+        <div id="info-msg-box">
+            <h1> Midnight Mass Dress-up </h1>
+            <h2>Dress up your local hot priest.</h2>
+            <p>
+                This is a small fanmade dressup game featuring our beloved Father Paul Hill.<br>
+                Get him ready to be dragged to a vampire-goth party on the mainland...<br>
+                <br>
+                I don't own the character featured here. They belong to Mike Flanagan and Netflix.<br>
+                <br>
+                The featured images are licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="blank">CC-BY-NC</a>
+                So you can distribute, remix, adapt, and build upon the material, while giving credit and not using it commercially.
+                Feel free to use the black and white versions as a coloringpage, do some photobashing with it or add your own stuff... <br>
+                <br>
+                Hope you'll have some fun!
+            </p>
+
+            <h3> How to play </h3>
+
+            <p>
+                Below the canvas select a clothing category, pick a clothing item. <br>
+                Now dress him up!<br>
+                You can remove the clothingitem by clicking the trashcan on the left of the other clothingitems.<br>
+                <br>
+                <b>Toggle color and b/w versions:</b><br>
+                Click the brush icon to toggle between a b/w version or a coloured version of the images.<br>
+                <br>
+                <b>Undress:</b><br>
+                Click the two rotating arrows to undress him again.<br>
+                <br>
+                <b>Download:</b><br>
+                Click the download arrow to get a snapshot of the current view.<br>
+            </p>
+            <h3>Credits</h3>
+            <p>
+                Art and Code by <a href="https://yngwer.carrd.co" target="blank">@yngwer</a><br>
+                <br>
+                The Images featured here are licenced under <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="blank">CC-BY-NC</a><br>
+                <br>
+                The Code is available on my <a href="https://github.com/yngwer/midnight-mass-dressup" target="blank">Github</a> and licensed under <a href="https://github.com/yngwer/midnight-mass-dressup/blob/main/LICENSE" target="blank">GPL-3.0</a><br>
+                <small>(Though I don't know why anybody would look at it. It was written with my absolute last braincell, cause the otherones went you know where ...)</small>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
